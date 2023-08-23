@@ -106,3 +106,43 @@ package main
 // 	}
 // 	// ****************************
 // }
+
+import (
+	"fmt"
+)
+
+func main() {
+	// type Human struct {
+	// 	name      string
+	// 	age       int
+	// 	height    float64
+	// 	sex       string
+	// 	isStudent bool
+	// }
+
+	// human1 := Human{name: "Tiskae", age: 21, height: 183, sex: "male", isStudent: true}
+	// fmt.Println(reflect.TypeOf(human1))
+
+	// myMap := make(map[string]string)
+	// myMap["lang"] = "Golang"
+	// myMap["prevLang"] = "JavaScript"
+	// myMap["otherLang"] = "Python"
+
+	myMap := map[string]string{
+		"lang":        "Golang",
+		"prevLang":    "JavaScript",
+		"otherLang":   "Python",
+		"deletedLang": "Rust",
+	}
+
+	myMap["lang"] = "Ruby"
+	if _, ok := myMap["newLang"]; ok {
+		fmt.Println("New language exists")
+	} else {
+		fmt.Println("New language does not exist")
+	}
+
+	delete(myMap, "deletedLang")
+
+	fmt.Println(myMap)
+}

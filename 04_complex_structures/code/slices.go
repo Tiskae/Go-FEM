@@ -69,3 +69,16 @@ package main
 
 // 	// // fmt.Println("After Copy:", originalSlice, destination, mysteryValue)
 // }
+
+import "fmt"
+
+func main() {
+	myFruits := [...]string{"banana", "orange", "pineapple", "apple", "pear"}
+	slicedFruits := myFruits[1:3]
+
+	updatedFruits := append(slicedFruits, "pawpaw", "kiwi", "grape", "pineapple", "apple", "pear")
+
+	fmt.Println(slicedFruits, len(slicedFruits), cap(slicedFruits))
+	fmt.Println(updatedFruits, len(updatedFruits), cap(updatedFruits))
+
+}
