@@ -69,6 +69,6 @@ func getScore() {
 	} else if totalScore > 39 {
 		fmt.Println("Ah, that's an E")
 	} else {
-		fmt.Println("Omo, you no sabi book 😭")
+		fmt.Println("Omo!")
 	}
 }
