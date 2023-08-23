@@ -7,7 +7,7 @@ func main() {
 
 	for index, value := range mySentence {
 		if index%2 == 1 {
-			fmt.Printf("Index: %d, value: %s\n", index, string(value))
+			fmt.Println(string(value))
 		}
 	}
 }
