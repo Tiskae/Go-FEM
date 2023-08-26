@@ -1,9 +1,6 @@
 package utils
 
-import (
-	// "GO-FEM/05_toolkit/code/utils"
-	"testing"
-)
+import "testing"
 
 func TestAdd(t *testing.T) {
 	expected := 15
